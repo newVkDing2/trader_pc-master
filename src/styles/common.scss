@@ -1,0 +1,143 @@
+// 全局变量
+// @import './variables.scss';
+// ele样式覆盖
+@import "./element-ui.scss";
+// 顶部右侧显示
+// @import './top.scss';
+// 导航标签
+// @import './tags.scss';
+// 工具类函数
+@import "./mixin.scss";
+// 动画
+@import "./animate/vue-transition.scss";
+//主题
+@import "./theme/index.scss";
+//适配
+// @import './media.scss';
+//通用配置
+@import "./normalize.scss";
+
+@import "./flex.css";
+$logoColor: #09BA85;
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+* {
+  outline: none;
+
+}
+
+.commonBtn_bg {
+  color: #fff;
+  background: #09BA85;
+}
+.cur_p{
+  cursor: pointer;
+}
+.cur_d{
+  cursor: default;
+}
+.a1 {
+  font-weight: 700;
+}
+
+.a2 {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.c1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.c2 {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.c3 {
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.d1 {
+  font-size: 18px;
+}
+
+.d2 {
+  font-size: 14px;
+}
+
+.e1 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.e2 {
+  font-size: 16px;
+}
+
+.logo_color {
+  color: $logoColor;
+}
+
+.container_box {
+  width: 1260px;
+  margin: auto;
+}
+
+
+.container_box1560 {
+  width: 1560px;
+  margin: auto;
+}
+
+.flex-box {
+  display: flex;
+  align-items: center;
+}
+
+.box-line {
+  background-color: rgba(123, 123, 147, 0.16);
+}
+
+.border-bottom-line__second {
+  border-bottom: 1px solid rgba(123, 123, 147, 0.16);
+}
+
+.fit-tc-fall {
+  color: #d62548 !important;
+  border-color: #d62548 !important;
+}
+
+.fit-tc-rise {
+  color: #4bbd83 !important;
+  border-color: #4bbd83 !important;
+}
+
+.fit-tc-fall-bg {
+  background-color: #d62548;
+}
+
+.fit-tc-rise-bg {
+  background-color: #4bbd83;
+}
+
+.fit-success {
+  color: #0d8665
+}
+
+.fit-fall {
+  color: #e0443f;
+}
+
+.fit-warn {
+  color: #d17831
+}
+
+//滚动条样式
+@include scrollBar;

@@ -1,0 +1,61 @@
+:root {
+  --bgColor: #fff;
+  --fontColor: #333;
+  --ex-primary-color: #17ac74;
+}
+
+body,
+html {
+  background-color: var(--bgColor) !important;
+}
+body > * {
+  background-color: var(--bgColor) !important;
+}
+body > * > * {
+  background-color: var(--bgColor) !important;
+}
+body > * > * > * {
+  background-color: var(--bgColor) !important;
+}
+.chart-container {
+  height: 100% !important;
+}
+.chart-widget {
+  height: 100% !important;
+}
+td.chart-markup-table {
+  background-color: var(--bgColor) !important;
+}
+
+.tv-exit-fullscreen-button {
+  display: none;
+}
+
+.pane-legend-item-value-container {
+  font-size: 14px !important;
+}
+.pane-legend-item-value-title {
+  margin-right: 3px !important;
+}
+
+div[class^='toolbar-'] {
+  padding: 0 !important;
+}
+.group-wWM3zP_M- {
+  background-color: var(--bgColor) !important;
+}
+
+.button-2ioYhFEY-,
+.menu-16FRUKka-,
+.button-2ioYhFEY-:hover,
+.menu-16FRUKka-:hover {
+  color: var(--fontColor);
+  background-color: var(--bgColor) !important;
+}
+#tooltip-root-element,
+#header-toolbar-indicators::before {
+  display: none;
+}
+.tv-spinner__spinner-layer {
+  color: var(--ex-primary-color) !important;
+}

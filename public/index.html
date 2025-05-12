@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+  <meta name="renderer" content="webkit" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+  <link rel="stylesheet" href="<%= BASE_URL %>cdn/element-ui/2.15.6/theme-chalk/index.css" />
+  <link rel="stylesheet" href="<%= BASE_URL %>cdn/iconfont/avue/iconfont.css" />
+  <link rel="stylesheet" href="<%= BASE_URL %>cdn/avue/2.9.5/index.css" />
+  <link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+  <script async type="text/javascript" src="./charting_library/charting_library.min.js"></script>
+  <title>Coincheckusa</title>
+  <style>
+    html,
+    body,
+    #app {
+      margin: 0;
+      padding: 0;
+    }
+
+    .coinhouse-home {
+      background-color: #303133;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .coinhouse-home__main {
+      user-select: none;
+      width: 100%;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .coinhouse-home__footer {
+      width: 100%;
+      flex-grow: 0;
+      text-align: center;
+      padding: 1em 0;
+    }
+
+    .coinhouse-home__footer>a {
+      font-size: 12px;
+      color: #ababab;
+      text-decoration: none;
+    }
+
+    .coinhouse-home__loading {
+      height: 32px;
+      width: 32px;
+      margin-bottom: 20px;
+    }
+
+    .coinhouse-home__title {
+      color: #fff;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+
+    .coinhouse-home__sub-title {
+      color: #ababab;
+      font-size: 12px;
+    }
+  </style>
+</head>
+
+<body>
+  <noscript>
+    <strong>
+      很抱歉，如果没有 JavaScript 支持，网站将不能正常工作。请启用浏览器的
+      JavaScript 然后继续。
+    </strong>
+  </noscript>
+  <div id="app">
+    <div class="coinhouse-home">
+      <div class="coinhouse-home__main">
+        <img class="coinhouse-home__loading" src="<%= BASE_URL %>svg/loading-spin.svg" alt="loading" />
+        <div class="coinhouse-home__title">正在加载资源</div>
+        <div class="coinhouse-home__sub-title d">
+          初次加载资源可能需要较多时间 请耐心等待
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="<%= BASE_URL %>cdn/vue/2.6.10/vue.min.js" charset="utf-8"></script>
+  <script src="<%= BASE_URL %>cdn/vuex/3.1.1/vuex.min.js" charset="utf-8"></script>
+  <script src="<%= BASE_URL %>cdn/vue-router/3.0.1/vue-router.min.js" charset="utf-8"></script>
+  <script src="<%= BASE_URL %>cdn/axios/1.0.0/axios.min.js" charset="utf-8"></script>
+  <script src="<%= BASE_URL %>cdn/element-ui/2.15.6/index.js" charset="utf-8"></script>
+  <script src="<%= BASE_URL %>cdn/avue/2.9.5/avue.min.js" charset="utf-8"></script>
+  <script type="text/javascript">
+    var mobileAgent = new Array(
+      "iphone",
+      "ipod",
+      "ipad",
+      "android",
+      "mobile",
+      "blackberry",
+      "webos",
+      "incognito",
+      "webmate",
+      "bada",
+      "nokia",
+      "lg",
+      "ucweb",
+      "skyfire"
+    );
+    var browser = navigator.userAgent.toLowerCase();
+
+    var os = (function () {
+      var ua = navigator.userAgent,
+        isWindowsPhone = /(?:Windows Phone)/.test(ua),
+        isSymbian = /(?:SymbianOS)/.test(ua) || isWindowsPhone,
+        isAndroid = /(?:Android)/.test(ua),
+        isFireFox = /(?:Firefox)/.test(ua),
+        isChrome = /(?:Chrome|CriOS)/.test(ua),
+        isTablet =
+          /(?:iPad|PlayBook)/.test(ua) || (isAndroid && !/(?:Mobile)/.test(ua)) || (isFireFox && /(?:Tablet)/.test(ua)),
+        isPhone = /(?:iPhone)/.test(ua) && !isTablet,
+        isPc = !isPhone && !isAndroid && !isSymbian
+      return {
+        isTablet: isTablet,
+        isPhone: isPhone,
+        isAndroid: isAndroid,
+        isPc: isPc,
+      }
+    })()
+    if (os.isAndroid || os.isPhone) {
+      location.href = 'https://www.coincheckusa.com/#/'
+    } else if (os.isTablet) {
+    } else if (os.isPc) {
+    }
+
+    // var isMobile = false;
+    // for (var i = 0; i < mobileAgent.length; i++) {
+    //   if (browser.indexOf(mobileAgent[i]) != -1) {
+    //     isMobile = true;
+    //     location.href = "https://pc.coincheckusa.com/";
+    //     break;
+    //   }
+    // }
+    // window.$crisp = [];
+    // window.CRISP_WEBSITE_ID = "dd43281f-2309-4a25-8526-d40bfa74ef89";
+    // (function () {
+    //   d = document;
+    //   s = d.createElement("script");
+    //   s.src = "https://client.crisp.chat/l.js";
+    //   s.async = 1;
+    //   d.getElementsByTagName("head")[0].appendChild(s);
+    // })();
+  </script>
+
+</body>
+
+</html>

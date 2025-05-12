@@ -1,0 +1,118 @@
+.flex-center {
+	display: flex;
+	justify-content: center;
+	/* #ifdef APP-PLUS */
+	align-items: center;
+	/* #endif */
+	flex-wrap: wrap;
+	flex-direction: row;
+	/* #ifdef H5 */
+	align-content: center;
+	align-items: center;
+	/* #endif */
+}
+
+.flex-start {
+	display: flex;
+	justify-content: flex-start;
+	/* #ifdef APP-PLUS */
+	align-items: center;
+	/* #endif */
+	flex-wrap: wrap;
+	flex-direction: row;
+	/* #ifdef H5 */
+	align-content: center;
+	align-items: center;
+	/* #endif */
+}
+
+.flex-end {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-colum {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* #ifdef APP-PLUS */
+	align-items: center;
+	/* #endif */
+	/* #ifdef H5 */
+	align-content: center;
+	align-items: center;
+	/* #endif */
+
+}
+
+.flex-colum-evenly {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.flex-colum-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.flex-colum-around {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+
+
+
+.flex-colum-start {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+
+}
+
+.flex-colum-end {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-end;
+
+}
+
+.flex-between {
+	display: flex;
+	justify-content: space-between;
+	/* #ifdef APP-PLUS */
+	align-items: center;
+	/* #endif */
+	flex-wrap: wrap;
+	flex-direction: row;
+	/* #ifdef H5 */
+	align-content: center;
+	align-items: center;
+	/* #endif */
+}
+
+
+.flex-around {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.flex-evenly {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	flex-direction: row;
+}

@@ -1,0 +1,242 @@
+.funds-trade-dialog {
+  .funds-type {
+    justify-content: space-between;
+    .el-dropdown {
+      flex: 0 0 202px;
+    }
+    .dropdown-link {
+      border: 1px solid;
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 8px;
+      transition: all 0.3s;
+      justify-content: space-between;
+      .text {
+        font-size: 16px;
+      }
+    }
+    .funds-icon {
+      font-size: 20px;
+      padding: 5px;
+      border-radius: 50%;
+      border: 1px solid;
+      width: 35px;
+      height: 35px;
+      box-sizing: border-box;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      border-color: #0020FD;
+      color: #0020FD;
+    }
+  }
+  .funds-coin,
+  .funds-money {
+    margin-top: 24px;
+    width: 100%;
+    .el-select {
+      width: 100%;
+    }
+    .el-input {
+      .el-input__inner {
+        height: 48px;
+        width: 100%;
+      }
+    }
+  }
+  .funds-money {
+    .el-input__inner {
+      padding-right: 100px;
+    }
+    .el-input__suffix {
+      display: flex;
+      align-items: center;
+      .text {
+        border-right: 1px solid;
+        line-height: 16px;
+        font-size: 12px;
+        padding-right: 12px;
+        margin-right: 12px;
+      }
+      .btn {
+        cursor: pointer;
+        font-size: 12px;
+        padding-right: 5px;
+      }
+    }
+    .money-text {
+      text-align: right;
+      margin-top: 4px;
+      font-size: 12px;
+      line-height: 16px;
+      span {
+        padding-left: 10px;
+      }
+    }
+  }
+  .funds-btn-box {
+    margin-top: 40px;
+    .el-button {
+      width: 100%;
+      padding: 12px;
+    }
+  }
+}
+.funds-coin-select {
+  .el-select-dropdown__item {
+    font-size: 14px;
+    span {
+      display: flex;
+      align-items: center;
+    }
+    img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+  }
+}
+.funds-trade-menu {
+  .el-dropdown-menu__item {
+    width: 202px;
+    box-sizing: border-box;
+  }
+}
+
+.warehouse-coin-dialog {
+  .warehouse-coin-box {
+    .info-box {
+      border-bottom: 1px solid;
+      padding-bottom: 16px;
+      font-size: 12px;
+      .btn {
+        background-color: #22a87b;
+        color: #f5faff;
+        font-size: 12px;
+        font-weight: 600;
+        padding: 4px 12px;
+        border-radius: 4px;
+      }
+      img {
+        width: 24px;
+        height: 24px;
+        margin: 0 16px 4px;
+      }
+      .coin {
+        font-size: 20px;
+      }
+    }
+    .order-box {
+      font-size: 12px;
+      margin-top: 16px;
+      padding-bottom: 16px;
+      border-bottom: 1px solid;
+      .box-line {
+        margin: 0 24px;
+      }
+      .item {
+        flex: 1;
+        div {
+          line-height: 16px;
+          &:nth-child(2) {
+            font-weight: 500;
+          }
+        }
+      }
+    }
+    .warehouse-info {
+      margin-top: 16px;
+      padding-bottom: 24px;
+      text-align: center;
+      border-bottom: 1px solid;
+      .title {
+        line-height: 20px;
+      }
+      .money {
+        line-height: 48px;
+        font-size: 32px;
+      }
+      .interest {
+        padding-top: 16px;
+        line-height: 20px;
+      }
+    }
+    .forecast-info {
+      margin-top: 16px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid;
+      div {
+        justify-content: space-between;
+      }
+    }
+  }
+  .btn-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    .el-button {
+      &:nth-child(1) {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+.pry-coin-multiple-dialog {
+  .multiple-text {
+    text-align: center;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .multiple-lever {
+    height: 16px;
+    margin: 40px 8px 0;
+    position: relative;
+    .lever-bar {
+      background: linear-gradient(90deg, #31ad84, #e0443f);
+      border-radius: 2px;
+      height: 4px;
+      flex: 1;
+    }
+    .curr-content {
+      background-color: #0020FD;
+      width: 8px;
+      height: 8px;
+      position: absolute;
+      left: 0;
+      top: 3px;
+      border: 1px solid;
+      border-radius: 5px;
+      margin-left: -10px;
+    }
+  }
+  .multiple-big {
+    margin-top: 16px !important;
+    justify-content: space-around;
+    .big-item-box {
+      flex: 1;
+    }
+    .big-item {
+      margin-right: 4px;
+      height: 36px;
+      line-height: 36px;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      cursor: pointer;
+    }
+  }
+  .big-borrow-tip {
+    text-align: center;
+    line-height: 16px;
+    font-size: 12px;
+    margin-top: 40px;
+  }
+  .big-borrow-text {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+  }
+}
